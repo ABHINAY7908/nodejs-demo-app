@@ -10,7 +10,7 @@ test("Homepage should return success", async () => {
 
     assert.strictEqual(
         response.text,
-        "Welcome to Node.js CI/CD Project!"
+        "Welcome to My Automated CI/CD Project!"
     );
 });
 
