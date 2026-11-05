@@ -79,9 +79,3 @@ The Docker Hub screenshot shows the image repository `abhinaylone/nodejs-demo-ap
 docker pull abhinaylone/nodejs-demo-app:latest
 docker run --rm -p 3000:3000 abhinaylone/nodejs-demo-app:latest
 ```
-
-## Errors and how I checked the app
-
-The shared ChatGPT conversation link could not be read from this environment, so I cannot confirm which exact error was discussed there. I do not want to guess and document the wrong problem.
-
-In the screenshots provided, the app is responding successfully: the home page displays its welcome message, and `/health` returns `status: success`. If the page does not open when you run it, first check that the server or Docker container is running and that port `3000` is mapped to port `3000` on your computer. If you share the error text from the conversation, this section can be updated with the exact problem and solution in simple English.
