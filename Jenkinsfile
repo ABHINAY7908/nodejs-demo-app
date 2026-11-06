@@ -2,6 +2,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS-22'
+    }
+
     stages {
 
         stage('Checkout') {
@@ -14,6 +18,9 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Node.js dependencies'
+
+                sh 'node --version'
+                sh 'npm --version'
                 sh 'npm ci'
             }
         }
